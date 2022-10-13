@@ -17,14 +17,22 @@ section p,h1,h2,h3, blockquote {
     color: white;
 }
 
-.second-heading {
+.section2 h2 {
+    max-width: 10rem;
+}
+
+h2 span {
     max-width: 15rem;
     font-size: 3.7rem;
-    z-index: 1;
+    position: relative;
     text-shadow: 2px 2px 3px black;
 }
 
-.second-heading span {
+.space {
+    z-index: 1;
+}
+
+.ventures {
     font-family: 'Times New Roman', Times, serif;
     font-size: 4.4rem;
     font-weight: bold;
@@ -54,7 +62,7 @@ section p,h1,h2,h3, blockquote {
     line-height: 1.4rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 1024px) {
     .split {
         flex-direction: row;
     }
@@ -115,10 +123,6 @@ section p,h1,h2,h3, blockquote {
     cursor: pointer;
 }
 
-.story-link h1 {
-    color: black;
-}
-
 .story-link span {
     font-family: "Fira Code Retina";
     position: relative;
@@ -141,6 +145,7 @@ section p,h1,h2,h3, blockquote {
 }
 
 .story-link h1 {
+    color: black;
     margin-top: 5px;
     text-transform: uppercase;
     line-height: 43px;
@@ -193,11 +198,19 @@ section p,h1,h2,h3, blockquote {
     text-shadow: 1px 1px 3px black;
 }
 
-.img1 {
+.section1 {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
 }
 
-.img2 {
+.section2 {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
 }
 

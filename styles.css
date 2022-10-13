@@ -5,16 +5,68 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    font-family: 'Rubik', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
 
-.wrapper {
-    padding: 0;
+section p,h1,h2,h3, blockquote {
+    color: white;
+}
+
+.second-heading {
+    max-width: 15rem;
+    font-size: 3.7rem;
+    z-index: 1;
+    text-shadow: 2px 2px 3px black;
+}
+
+.second-heading span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: rgb(179, 179, 179);
+    position: relative;
+    top: -45px;
+    left: 50px;
+    z-index: 0;
+}
+
+.container {
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.split p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+}
+
+.floating-text {
+    font-style: italic;
+    font-size: 1.2rem;
 }
 
 .menu-bar {
@@ -63,6 +115,10 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.story-link h1 {
+    color: black;
+}
+
 .story-link span {
     font-family: "Fira Code Retina";
     position: relative;
@@ -93,39 +149,47 @@ h1, h2, h3, h4, h5, h6 {
  
 .white-arrow {
     font-family: "Fira Code Retina";
+    font-weight: bold;
+    font-size: 1.5rem;
     color: white;
-    position: fixed;
-    bottom: 5px;
-    left: 45%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
     transform: rotate(90deg);
 }
+
+.split a {
+    color: pink;
+}
+
+.split a span {
+    text-decoration: none;
+    font-family: "Fira Code Retina";
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+}
+
+.split a:hover span {
+    left: 15px;
+}
+
 
 .bg-image {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-}
-
-.h2-infront {
-    font-size: 2.5rem;
-    position: relative;
-    top: 30px;
-    left: 30px;
-    color: white;
-    z-index: 2;
-    text-shadow: 1px 1px 4px black;
 }
 
 .text-behind {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
+    font-size: 3.7rem;
     font-weight: bold;
     color: gray;
     position: relative;
-    left: -90px;
-    top: 20px;
+    left: 53px;
+    top: -45px;
     text-shadow: 1px 1px 3px black;
 }
 

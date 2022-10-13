@@ -51,9 +51,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 5px;
 }
 
-.story-button {
+.story-link {
     width: 160px;
     height: 175px;
+    text-align: center;
     position: relative;
     left: 40px;
     top: 40px; 
@@ -62,29 +63,32 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.story-button span {
+.story-link span {
     font-family: "Fira Code Retina";
     position: relative;
     left: 5px;
     transition: left 0.3s ease-in-out;
 }
 
-.story-button:hover span {
+.story-link:hover span {
     left: 15px;
 }
 
 .story-text {
+    text-decoration: none;
+    color: inherit;
     font-weight: bold;
     position: relative;
-    top: -10px;
+    font-size: 0.9rem;
+    top: 10px;
     left: -10px;
 }
 
-.story-button h1 {
+.story-link h1 {
     margin-top: 5px;
     text-transform: uppercase;
     line-height: 43px;
-    font-size: 35px;
+    font-size: 2rem;
 }
  
 .white-arrow {
@@ -104,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.space-ventures h1 {
+.h2-infront {
     font-size: 2.5rem;
     position: relative;
     top: 30px;
@@ -120,8 +124,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: gray;
     position: relative;
-    left: 67px;
-    top: -2px;
+    left: -90px;
+    top: 20px;
     text-shadow: 1px 1px 3px black;
 }
 

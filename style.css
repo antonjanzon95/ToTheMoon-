@@ -232,5 +232,5 @@ blockquote::after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
 }/*# sourceMappingURL=style.css.map */

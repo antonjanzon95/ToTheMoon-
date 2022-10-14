@@ -97,6 +97,9 @@ blockquote::after {
 }
 
 .menu-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   text-align: right;
   background-color: transparent;
   margin-bottom: -50px;

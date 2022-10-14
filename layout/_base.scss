@@ -108,6 +108,8 @@ blockquote {
 }
 
 .menu-bar {
+    position: sticky;
+    top: 0px;
     text-align: right;
     background-color: transparent;
     margin-bottom: -50px;

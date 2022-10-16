@@ -107,31 +107,17 @@ blockquote {
 
 }
 
-.menu-bar {
-    position: sticky;
-    top: 0px;
-    text-align: right;
-    background-color: transparent;
-    margin-bottom: -50px;
-}
+//Menu
 
 .menu-button {
-    margin: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
     background-color: transparent;
     border: 0;
     width: 50px;
     height: 30px;
     cursor: pointer;
-}
-
-.menu-button span:nth-child(2) {
-    position: relative;
-    left: -5px;
-    transition: left 0.3s ease-in-out;
-}
-
-.menu-button:hover span:nth-child(2) {
-    left: 0px;
 }
 
 .button-lines {
@@ -142,6 +128,87 @@ blockquote {
     display: block;
     margin-bottom: 5px;
 }
+
+input {
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+input + .menu .menu-button span:nth-child(2) {
+    position: relative;
+    left: -5px;
+    transition: left 0.3s ease-in-out;
+}
+
+input:checked + .menu .menu-button span {
+    position: relative;
+}
+
+input:hover + .menu .menu-button span:nth-child(2) {
+    left: 0px;
+}
+
+input:checked + .menu .menu-button span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + .menu .menu-button span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+input:checked + .menu .menu-button span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 10px;
+}
+
+input:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(144, 144, 144, 0.804);
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    visibility: hidden;
+    z-index: 5;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 4rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .story-link {
     width: 160px;

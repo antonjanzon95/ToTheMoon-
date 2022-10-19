@@ -25,13 +25,12 @@ section p,h1,h2,h3, blockquote {
 
 .section2 h2 {
     max-width: 10rem;
-    margin-left: 1rem;
     margin-bottom: 5rem;
 }
 
 h2 span {
     max-width: 20rem;
-    font-size: 5rem;
+    font-size: 4rem;
     position: relative;
     text-shadow: 2px 2px 3px black;
 }
@@ -42,12 +41,12 @@ h2 span {
 
 .ventures {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     font-weight: bold;
     color: rgb(179, 179, 179);
     position: absolute;
     margin-top: -0.5rem;
-    margin-left: 4rem;
+    margin-left: 3.5rem;
     z-index: 0;
 }
 
@@ -241,6 +240,7 @@ nav ul {
 li a {
     text-decoration: none;
     color: inherit;
+    line-height: 3.5rem;
 }
 
 .story-link {

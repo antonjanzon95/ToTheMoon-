@@ -32,9 +32,9 @@ a.story-text {
     font-size: 5rem;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     text-decoration: underline;
-    text-decoration-color: pink;
+    text-decoration-color: rgb(171, 80, 95);
 }
 
 footer {
@@ -72,11 +72,6 @@ footer p {
     position: inherit;
 }
 
-.section2 h2 {
-    max-width: 40vw;
-    
-}
-
 .float-quote {
     max-width: 40vw;
     margin-left: 2rem;
@@ -95,14 +90,24 @@ footer p {
 
 }
 
+.section2 h2 {
+    margin-top: 3rem;
+    max-width: 40vw;
+}
+
+.section2 h2 span {
+    margin-top: 3rem;
+    font-size: 5rem;
+}
+
 .ventures {
     font-family: 'Times New Roman', Times, serif;
     font-size: 5.5rem;
     font-weight: bold;
     color: rgb(179, 179, 179);
     position: absolute;
-    margin-top: 2rem;
-    margin-left: -10rem;
+    margin-top: 10rem;
+    margin-left: -13rem;
     z-index: 0;
 }
 
@@ -120,6 +125,3 @@ footer p {
     width: 40%;
 }
 
-.section2 h2 {
-    margin-top: 2rem;
-}

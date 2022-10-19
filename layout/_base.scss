@@ -10,6 +10,8 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Rubik', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,11 +25,13 @@ section p,h1,h2,h3, blockquote {
 
 .section2 h2 {
     max-width: 10rem;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
 }
 
 h2 span {
-    max-width: 15rem;
-    font-size: 3.7rem;
+    max-width: 20rem;
+    font-size: 5rem;
     position: relative;
     text-shadow: 2px 2px 3px black;
 }
@@ -38,32 +42,22 @@ h2 span {
 
 .ventures {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 4.4rem;
+    font-size: 5.5rem;
     font-weight: bold;
     color: rgb(179, 179, 179);
-    position: relative;
-    top: -45px;
-    left: 50px;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: 4rem;
     z-index: 0;
 }
 
 .container {
-    padding: 2rem;
+    padding: 3rem;
     min-height: 100vh;
 }
 
 .container h3 {
     font-size: 1.5rem;
-}
-
-.split {
-    display: flex;
-    flex-direction: column;
-}
-
-.split p {
-    font-size: 0.8rem;
-    line-height: 1.4rem;
 }
 
 // @media (min-width: 1024px) {
@@ -76,11 +70,12 @@ h2 span {
 //     }
 // }
 
-blockquote {
+.float-quote {
     margin: 0 auto;
     font-style: italic;
+    line-height: 2rem;
     font-size: 1.2rem;
-    max-width: 160px;
+    max-width: 70vw;
     position: relative;
     span {
         position: inherit;
@@ -90,25 +85,63 @@ blockquote {
         font-family: 'Times New Roman', Times, serif;
         display: block;
         position: absolute;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         font-weight: bold;
         color: white;
-        opacity: 0.8;
+        opacity: 0.5;
         z-index: 0;
         line-height: 1;
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     }
     &::before {
-        content: '"';
-        top: -0.5rem;
-        left: -0.6rem;
+        content: open-quote;
+        margin-top: -0.8rem;
+        margin-left: -1.3rem;
     }
     &::after {
-        content: '"';
-        top: 7.2rem;
-        left: 8.4rem;
+        content: close-quote;
+        margin-top: -1rem;
+        margin-left: 3.7rem;
     }
 
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    background-color: rgb(0, 0, 68);
+    color: rgb(171, 80, 95);
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+footer button {
+    height: 40px;
+    margin: auto 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer p {
+    max-width: 80vw;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.hidden-phone {
+    visibility: hidden;
+    position: absolute;
 }
 
 //Menu
@@ -215,8 +248,6 @@ li a {
     height: 175px;
     text-align: center;
     position: relative;
-    left: 40px;
-    top: 40px;
     font-weight: bold;
     border: 4px solid black;
     background-color: transparent;
@@ -266,11 +297,11 @@ li a {
     transform: rotate(90deg);
 }
 
-.split a {
+.right a {
     color: pink;
 }
 
-.split p span {
+.right p span {
     font-family: "Fira Code Retina";
     position: relative;
     color: pink;
@@ -278,7 +309,7 @@ li a {
     transition: left 0.3s ease-in-out;
 }
 
-.split a:hover + span {
+.right a:hover + span {
     left: 10px;
 }
 

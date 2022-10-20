@@ -125,7 +125,7 @@ footer button {
 footer p {
     max-width: 80vw;
     margin: auto 0;
-    font-weight: bold;
+    font-weight: 400;
     text-shadow: 0.5px 0.5px rgb(210, 0, 162);
 }
 
@@ -222,7 +222,7 @@ nav ul {
     color: black;
     filter: drop-shadow(1px 3px 1px rgb(157, 157, 157));
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 li a {
@@ -232,13 +232,12 @@ li a {
 }
 
 .story-link {
-    width: 160px;
+    width: 175px;
     height: 175px;
     text-align: center;
     position: relative;
-    font-weight: bold;
     border: 4px solid black;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.536);
     cursor: pointer;
 }
 
@@ -259,16 +258,16 @@ li a {
     position: relative;
     font-size: 0.9rem;
     top: 10px;
-    left: -10px;
+    left: -25px;
 }
 
 .story-link h1 {
     color: black;
     margin-top: 5px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 43px;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
  
 .white-arrow {

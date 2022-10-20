@@ -59,16 +59,6 @@ h2 span {
     font-size: 1.5rem;
 }
 
-// @media (min-width: 1024px) {
-//     .split {
-//         flex-direction: row;
-//     }
-
-//     .split > * {
-//         flex-basis: 100%;
-//     }
-// }
-
 .float-quote {
     margin: 0 auto;
     font-family: 'Rubik', sans-serif;
@@ -141,8 +131,6 @@ footer p {
 .hidden-phone {
 display: none;
 }
-
-//Menu
 
 .menu-button {
     position: fixed;
@@ -312,6 +300,9 @@ li a {
     left: 10px;
 }
 
+.section2 img {
+    display: none;
+}
 
 .bg-image {
     height: 100%;
@@ -331,8 +322,6 @@ li a {
     text-shadow: 1px 1px 3px black;
 }
 
-
-
 .section1 {
     height: 100%;
     background-position: center;
@@ -342,10 +331,9 @@ li a {
 }
 
 .section2 {
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash_compressed.jpg");
 }
 
